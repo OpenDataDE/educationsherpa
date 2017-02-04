@@ -1,0 +1,13 @@
+<h1>Schools</h1>
+<table border="1">
+  <tr class="<%= "title" %>">
+    <th>School</th>
+    <th>Address</th>
+  </tr>
+  <% @schools.each do |school| %>
+      <tr class="<%= cycle('even', 'odd') %>">
+        <td><%= sanitize(school["schoolname"]) %></td>
+        <td><%= sanitize(school["street1"]) %></td>
+      </tr>
+  <% end %>
+</table>
