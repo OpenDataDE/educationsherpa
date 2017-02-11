@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Schools</title>
+    <title>Delaware School Choice Sherpa</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -9,6 +9,11 @@
   </head>
 
   <body>
+	<h1><%= link_to 'Delaware School Choice Sherpa', home_index_path %></h1>
+	<%= link_to 'About', home_about_path %>
+	<%= link_to 'Navigate School Choice', home_navigate_school_choice_path %>
+	<%= link_to 'Find Your Feeder Pattern', home_find_feeder_pattern_path %>
+	<%= link_to 'Find a School', home_find_school_path %>
     <%= yield %>
   </body>
 </html>
