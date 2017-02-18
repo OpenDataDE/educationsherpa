@@ -1,18 +1,18 @@
 Rails.application.routes.draw do
-  get 'home/index'
+  get 'schools/index'
   
-  get 'home/about'
+  get 'schools/about'
   
-  get 'home/learn_school_choice_process'
+  get 'schools/learn_school_choice_process'
 
-  get 'home/navigate_school_choice'
+  get 'schools/navigate_school_choice'
 
-  get 'home/find_feeder_pattern'
+  get 'schools/find_feeder_pattern'
 
-  get 'home/find_school'
+  get 'schools/find_school'
 
   get 'schools/index'
-
-  root 'home#index'
+  
+  root 'schools#index'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
