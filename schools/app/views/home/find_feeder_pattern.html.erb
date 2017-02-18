@@ -1,0 +1,7 @@
+<h1>Home#find_feeder_pattern</h1>
+<p>Find me in app/views/home/find_feeder_pattern.html.erb</p>
+<%= form_tag({controller: "schools", action: "find_feeder_pattern"}, method: "get") do %>
+  <%= label_tag(:address, "Search for:") %>
+  <%= text_field_tag(:address) %>
+  <%= submit_tag("Search") %>
+<% end %>
